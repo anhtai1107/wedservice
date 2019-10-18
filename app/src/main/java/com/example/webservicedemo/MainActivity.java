@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Request> call, Response<Request> response) {
                 for (User user : response.body().getData()) {
+
                     Log.d("DEBUG", String.valueOf(user.getEmail()));
                 }
 
